@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://c7y15yxvh7hun"]
+
+[ext_resource type="Script" path="res://bb_spowner.gd" id="1_2uwco"]
+[ext_resource type="PackedScene" uid="uid://0wn7ausakcs4" path="res://tscn_file/env_subfile/bubble.tscn" id="2_ejtwy"]
+
+[node name="BB_spowner" type="Node2D"]
+position = Vector2(245, 318)
+script = ExtResource("1_2uwco")
+bb_instance = ExtResource("2_ejtwy")

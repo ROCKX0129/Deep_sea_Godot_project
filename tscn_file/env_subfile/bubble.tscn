@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://0wn7ausakcs4"]
+
+[ext_resource type="Script" path="res://bubble.gd" id="1_qq5v7"]
+[ext_resource type="Texture2D" uid="uid://b5ssh06gemia0" path="res://material/Animation/Background/TBG02.png" id="2_rfkvc"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_stpjh"]
+
+[node name="Bubble" type="Area2D"]
+script = ExtResource("1_qq5v7")
+
+[node name="BB_pic" type="Sprite2D" parent="."]
+position = Vector2(-2, -5)
+texture = ExtResource("2_rfkvc")
+
+[node name="BB_Shape" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_stpjh")
